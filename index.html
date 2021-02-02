@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>List App</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand active" href="#">Lista de Tareas</a>
+    </nav>
+
+    <div class="container">
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header" >
+                        <h4 class="text-center">Agrega un Tarea</h4>
+                    </div>
+                        <form  class="card-body" id="list-form">
+                            <div class="form-group">
+                              <label >Nombre de la Tarea</label>
+                              <input type="text"  id="name" class="form-control" placeholder="Nombre de la Tarea" aria-describedby="helpId">
+                            </div>
+                           <div class="form-group">
+                              <label for="">Emocion</label>
+                              <select  id="quantity" class="form-control" placeholder="Emocion">
+                                <option value="Bien 😀">Bien 😀</option>
+                                <option value="Mas o menos 🤔">Mas o menos 🤔</option>
+                                <option value="Aburrido 😶">Aburrido 😶</option>
+                                <option value="Mal 🙄">Mal 🙄</option>
+                                <option value="Triste 😔">Triste 😔</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Fecha</label>
+                                <input type="number" name="" id="year" class="form-control" placeholder="Fecha de creacion" aria-describedby="helpId">
+                              </div>
+                              <input type="submit" value="Save" class="btn btn-primary btn-block">
+                        </form>
+                    </div>
+                </div>
+                <div id="tasks-list" class="col-md-8">
+
+                </div>
+        </div>
+    </div>
+
+    <script src="./App.js"></script>
+</body>
+</html>
